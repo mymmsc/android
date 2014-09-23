@@ -118,6 +118,7 @@ public class AsyncImageLoader {
 
 		try {
 			is.close();
+			fos.close();
 		} catch (Exception ex) {
 			Log.e("tag", "error: " + ex.getMessage(), ex);
 		}

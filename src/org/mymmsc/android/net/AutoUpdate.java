@@ -166,6 +166,7 @@ public class AutoUpdate {
 			openFile(myTempFile);
 			try {
 				is.close();
+				fos.close();
 			} catch (Exception ex) {
 				Log.e(TAG, "getDataSource() error: " + ex.getMessage(), ex);
 			}

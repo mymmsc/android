@@ -109,6 +109,7 @@ public class Download {
 		sendMsg(2);
 		try {
 			is.close();
+			fos.close();
 		} catch (Exception ex) {
 			Log.e("tag", "error: " + ex.getMessage(), ex);
 		}
